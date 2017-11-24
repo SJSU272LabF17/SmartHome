@@ -1,0 +1,20 @@
+title: Main Panel
+widget_dimensions: [120, 120]
+widget_size: [1, 1]
+widget_margins: [5, 5]
+columns: 10
+global_parameters:
+    use_comma: 0
+    precision: 1
+    use_hass_icon: 1
+label:
+    widget_type: label
+    text: 272_Team5
+weather:
+    widget_type: weather
+    units: "&deg;F"
+clock:
+    widget_type: clock
+layout:
+    - clock(2x2), weather(2x2), label
+    - sensor.temperature, clock.clock
