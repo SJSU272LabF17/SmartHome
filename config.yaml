@@ -1,0 +1,5 @@
+HASS:
+  ha_url: http://team5.duckdns.org:8123
+HADashboard:
+  dash_url: http://localhost:5050
+  dash_dir: C:\Users\manvi\AppData\Roaming\.homeassistant\conf\dashboards

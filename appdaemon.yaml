@@ -1,0 +1,23 @@
+AppDaemon:
+  logfile: STDOUT
+  errorfile: STDERR
+  logsize: 100000
+  log_generations: 3
+  threads: 10
+  cert_verify: false
+  
+HASS:
+  ha_url: http://team5.duckdns.org:8123
+    
+HADashboard:
+  dash_url: http://localhost:5050
+  dash_dir: C:\Users\manvi\AppData\Roaming\.homeassistant\conf\dashboards
+  dash_force_compile: 1
+  dash_compile_on_start: 1
+  
+    
+# Apps
+hello_world:
+  module: hello
+  class: HelloWorld
+

@@ -1,20 +1,121 @@
-title: Main Panel
-widget_dimensions: [120, 120]
-widget_size: [1, 1]
-widget_margins: [5, 5]
+--- 
+clock: 
+  show_seconds: 1
+  time_format: 24hr
+  widget_style: "color: red"
+  widget_type: clock
 columns: 10
-global_parameters:
-    use_comma: 0
-    precision: 1
-    use_hass_icon: 1
-label:
-    widget_type: label
-    text: 272_Team5
-weather:
-    widget_type: weather
-    units: "&deg;F"
-clock:
-    widget_type: clock
-layout:
-    - clock(2x2), weather(2x2), label
-    - sensor.temperature, clock.clock
+default: 
+  dashboard: Hello
+  skin: default
+  title: "Skin Change"
+  title2: Defualt
+  widget_type: navigate
+garage:
+  widget_type: switch
+  title: Garage
+  enable: 1
+  #warn: 1
+  entity: switch.bulb
+  icon_off: fa-male
+  icon_on: fa-male
+  icon_style_active: "color: #ea4b82"
+glassic: 
+  dashboard: Hello
+  skin: glassic
+  title: "Skin Change"
+  title2: Glassic
+  widget_type: navigate
+global_parameters: 
+  precision: 1
+  use_comma: 0
+  use_hass_icon: 1
+iframe: 
+  refresh: 60
+  title: Cats
+  url_list: 
+    - "https://www.pexels.com/photo/grey-and-white-short-fur-cat-104827/"
+    - "https://www.pexels.com/photo/eyes-cat-coach-sofa-96938/"
+    - "https://www.pexels.com/photo/silver-tabby-cat-lying-on-brown-wooden-surface-126407/"
+    - "https://www.pexels.com/photo/kitten-cat-rush-lucky-cat-45170/"
+    - "https://www.pexels.com/photo/grey-fur-kitten-127028/"
+    - "https://www.pexels.com/photo/cat-whiskers-kitty-tabby-20787/"
+    - "https://www.pexels.com/photo/cat-sleeping-62640/"
+  widget_type: iframe
+label: 
+  text: 272_Team5
+  widget_type: label
+layout: 
+  - "clock(2x2), label(2x2)"
+  - "clock.clock, manvi_presence_mapped,navigate_widget"
+  - manvi_presence
+  - "zen, obsidian,default,glassic,simplyred"
+  - "reload,weather_summary,weather_temperature,sun,garage"
+manvi_presence: 
+  device: raghvendra
+  enable: 1
+  icon_on: fa-male
+  title: Raghvendra
+  widget_type: device_tracker
+manvi_presence_mapped: 
+  active_map: 
+    - home
+  device: raghvendra
+  title: Raghvendra
+  title2: Mapped
+  widget_type: device_tracker
+navigate_widget: 
+  title: Amazon
+  url: "http://amazon.com"
+  widget_type: navigate
+obsidian: 
+  dashboard: Hello
+  skin: obsidian
+  title: "Skin Change"
+  title2: Obsidian
+  widget_type: navigate
+reload: 
+  title: reload
+  widget_type: reload
+simplyred: 
+  dashboard: Hello
+  skin: simplyred
+  title: "Skin Change"
+  title2: "Simply Red"
+  widget_type: navigate
+sun: 
+  entity: sun.sun
+  icon_on: fa-sun-o
+  title: Sun
+  widget_type: sensor
+title: "Manvi's Home"
+weather: 
+  entity: sensor.yweather_condition
+  units: °F
+  widget_type: weather
+weather_summary: 
+  entity: sensor.yweather_current
+  text_style: "color: $green"
+  title: "How is it outside?"
+  widget_type: sensor
+weather_temperature: 
+  entity: sensor.yweather_temperature
+  sub_entity: sensor.yweather_temperature_max
+  text_style: "color: $green"
+  title: Temperatue
+  widget_type: sensor
+widget_dimensions: 
+  - 120
+  - 120
+widget_margins: 
+  - 5
+  - 5
+widget_size: 
+  - 1
+  - 1
+zen: 
+  dashboard: Hello
+  skin: zen
+  title: "Skin Change"
+  title2: Zen
+  widget_type: navigate
