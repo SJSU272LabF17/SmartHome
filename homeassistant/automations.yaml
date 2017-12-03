@@ -1,0 +1,39 @@
+  - alias: "I'm Home"
+    trigger:
+      platform: state
+      entity_id: device_tracker.raghvendra
+      from: 'not_home'
+      to: 'home'
+    action:
+      service: scene.turn_on
+      entity_id: scene.Home
+      
+  - alias: "I'm Away"
+    trigger:
+      platform: state
+      entity_id: device_tracker.raghvendra
+      from: 'home'
+      to: 'not_home'
+    action:
+      service: scene.turn_on
+      entity_id: scene.Not_Home
+      
+  - alias: "Daytime"
+    trigger:
+      platform: state
+      entity_id: sun.sun
+      from: 'below_horizon'
+      to: 'above_horizon'
+    action:
+      service: scene.turn_on
+      entity_id: scene.Day
+      
+  - alias: "NightTime"
+    trigger:
+      platform: state
+      entity_id: sun.sun
+      from: 'above_horizon'
+      to: 'below_horizon'
+    action:
+      service: scene.turn_on
+      entity_id: scene.Night

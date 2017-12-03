@@ -1,0 +1,5 @@
+2017-12-03 15:44:03 WARNING (MainThread) [homeassistant.setup] Setup of media_player is taking over 10 seconds.
+2017-12-03 15:44:06 WARNING (MainThread) [homeassistant.components.media_player] Setup of platform cast is taking over 10 seconds.
+2017-12-03 15:44:24 WARNING (Thread-6) [netdisco.ssdp] Error fetching description at http://[2001:0:9d38:90d7:31:1d27:b65d:1fed]:8096/dlna/9653f0cc957c44a79cf1644f9ff5fbd9/description.xml
+2017-12-03 15:44:24 WARNING (Thread-6) [netdisco.ssdp] Error fetching description at http://[fe80::31:1d27:b65d:1fed]:8096/dlna/9653f0cc957c44a79cf1644f9ff5fbd9/description.xml
+2017-12-03 15:44:24 WARNING (Thread-6) [netdisco.ssdp] Error fetching description at http://[fe80::b41a:b25b:b970:14]:8096/dlna/9653f0cc957c44a79cf1644f9ff5fbd9/description.xml

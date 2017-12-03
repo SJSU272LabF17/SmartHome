@@ -1,0 +1,106 @@
+  Rooms:
+    view: yes   
+    name: Rooms
+#    icon: mdi:home     
+    entities:  
+      - group.Living_Room 
+      - group.Bedroom 
+      - group.Kitchen
+          
+  Living_Room:  
+    name: Living Room  
+    entities:  
+      - switch.Bulb
+      - switch.Light 
+      - switch.Fan 
+      - switch.Television
+      - media_player.hall_tv
+      - camera.ip_webcam
+      
+  Bedroom: 
+    name: Bedroom  
+    entities:  
+      - switch.bedroom  
+      - switch.AC 
+      - media_player.hall_tv
+            
+  Kitchen:  
+    name: Kitchen 
+    entities:  
+      - switch.surfacelight  
+      - switch.exhaustfan 
+      - switch.kitchendoor
+      
+  Sensors:
+    view: yes   
+    name: Sensors     
+    entities:  
+      - group.sensor_node_1_group
+      
+  sensor_node_1_group:  
+    name: Sensor Node 1  
+    entities:  
+      - sensor.sn1_temperature  
+      - sensor.sn1_humidity  
+      - sensor.sn1_ldr  
+      - sensor.sn1_pir
+      
+  Garage:
+    view: yes   
+    name: Garage     
+    entities:  
+      - group.Garage_units
+         
+  Garage_units:
+    name: Garage units
+    entities:
+      - switch.garage
+      - camera.ip_webcam_2
+
+  Commute_time: 
+    view: yes
+#    icon: mdi:weather-cloudy
+    name: Commute Time  
+    entities:  
+      - group.Commute_group
+      
+  Commute_group: 
+    name: Commute Timings  
+    entities:  
+      - sensor.google_travel_time__driving
+      
+  Weather: 
+    view: yes
+#    icon: mdi:bus
+    name: Environment 
+    entities:  
+      - group.Weather_group
+     
+  Weather_group:   
+    name: Weather Details  
+    entities:  
+      - sensor.yweather_current
+      - sensor.yweather_temperature  
+      - sensor.yweather_temperature_max 
+      - sensor.yweather_temperature_min
+      - sensor.yweather_humidity
+      - sensor.yweather_visiblity
+      - sensor.yweather_pressure
+      - sensor.yweather_wind_speed
+      - sun.sun
+           
+  Phone_Presence:
+    view: yes   
+    name: Phone Presence
+#    icon: mdi:cellphone-iphone     
+    entities:  
+      - group.Phones
+      
+  Phones:  
+    name: Phones  
+    entities:  
+      - device_tracker.raghvendra
+      - device_tracker.parth
+      - device_tracker.sahil
+      - device_tracker.varun
+      - device_tracker.vinayak

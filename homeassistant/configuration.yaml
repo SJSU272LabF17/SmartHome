@@ -1,0 +1,369 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: HOME SWEET HOME
+  # Location required to calculate the time the sun rises and sets
+  latitude: 37.3422
+  longitude: -121.8833
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 24
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/Los_Angeles
+  # Customization file
+  customize:
+   switch.Television:
+    friendly_name: Television
+    icon: mdi:television-classic
+   switch.bulb:
+    friendly_name: Bulb
+    icon: mdi:lightbulb
+   switch.Fan:
+    friendly_name: Fan
+    icon: mdi:fan
+   switch.AC:
+    friendly_name: AC
+    icon: mdi:air-conditioner
+   switch.Light:
+    friendly_name: Light
+    icon: mdi:flash
+   switch.kitchendoor:
+    friendly_name: Kitchen Door
+    icon: mdi:lock
+   switch.surfacelight:
+    friendly_name: Surface Light
+    icon: mdi:ceiling-light
+   switch.exhaustfan:
+    friendly_name: Exhaust Fan
+    icon: mdi:spotlight
+   switch.bedroom:
+    friendly_name: Bedroom Light
+    icon: mdi:flash
+   switch.garage:
+    friendly_name: Garage Light 
+    icon: mdi:flash-circle
+   camera.ip_webcam:
+    friendly_name: Hall Camera
+    icon: mdi:camera
+   camera.ip_webcam_2:
+    friendly_name: Garage Camera
+    icon: mdi:cctv
+   sensor.yweather_current:
+    friendly_name: Current Weather
+    icon: mdi:weather-partlycloudy
+   sensor.yweather_temperature:
+    friendly_name: Current Temperature
+    icon: mdi:thermometer
+   sensor.yweather_temperature_min:
+    friendly_name: Minimum Temperature
+    icon: mdi:snowflake
+   sensor.yweather_temperature_max:
+    friendly_name: Maximum Temperature
+    icon: mdi:fire
+   sensor.yweather_humidity:
+    friendly_name: Humidity
+    icon: mdi:water-percent
+   sensor.yweather_pressure:
+    friendly_name: Pressure
+    icon: mdi:speedometer
+   sensor.yweather_wind_speed:
+    friendly_name: Wind Speed
+    icon: mdi:weather-windy-variant
+   sensor.yweather_visibility:
+    friendly_name: Wind Speed
+    icon: mdi:opacity
+   sun.sun:
+    friendly_name: sun
+    icon: mdi:white-balance-sunny
+   group.all_automations:
+    friendly_name: All Automations
+    hidden: false
+   group.all_scripts:
+    hidden: false
+
+# Show links to resources in log and frontend
+introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Secrets are defined in the file secrets.yaml
+    api_password: !secret api_password
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+notify:
+  - name: Raghvendra
+    platform: pushbullet
+    api_key: o.C30Nv8mnN1UNUHBEfe2ijvFSF8D8vSyT
+#light:  
+#  - platform: mqtt_json  
+#    name: "SN1 LED"  
+#    state_topic: "bruh/sensornode1"  
+#    command_topic: "bruh/sensornode1/set"  
+#    brightness: true  
+#    flash: true  
+#    rgb: true  
+#    optimistic: false  
+#    qos: 0
+    
+# Weather prediction
+sensor:
+  - platform: yr
+  - platform: yweather
+    monitored_conditions:
+      - weather
+      - weather_current
+      - temp_min
+      - temp_max
+      - wind_speed
+      - pressure
+      - visibility
+      - humidity
+      - temperature
+      
+  - platform: google_travel_time
+    api_key: !secret api_key
+    origin: The Esplanade, East Taylor Street, San Jose, CA, United States
+    destination: San José State University, San Jose, CA, United States
+    
+  - platform: mqtt  
+    state_topic: "home/sensornode1"  
+    name: "SN1 Humidity"  
+    unit_of_measurement: "%"  
+    value_template: '{{ value_json.humidity | round(1) }}'  
+  
+  - platform: mqtt  
+    state_topic: "home/sensornode1"  
+    name: "SN1 LDR"
+    ##This sensor is not calibrated to actual LUX. Rather, this a map of the input voltage ranging from 0 - 1023.
+    unit_of_measurement: "LUX"  
+    value_template: '{{ value_json.ldr }}'  
+    
+  - platform: mqtt  
+    state_topic: "home/sensornode1"  
+    name: "SN1 PIR"  
+    value_template: '{{ value_json.motion }}'  
+  
+  - platform: mqtt  
+    state_topic: "home/sensornode1"  
+    name: "SN1 Temperature"  
+    unit_of_measurement: "°F"  
+    value_template: '{{ value_json.temperature | round(1) }}'  
+
+  - platform: mqtt
+    state_topic: "home/sensornode1"
+    name: "SN1 Real Feel"
+    unit_of_measurement: "°F"
+    value_template: '{{ value_json.heatIndex | round(1) }}'
+# Text to speech
+tts:
+  - platform: google
+
+switch:
+ -  platform: mqtt
+    name: "Light"
+    state_topic: "home/bedroom2/D0_tubelight"
+    command_topic: "home/bedroom2/D0_tubelight"
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+
+ -  platform: mqtt
+    name: "Bulb"
+    state_topic: "home/bedroom2/D1_bulb"
+    command_topic: "home/bedroom2/D1_bulb"
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+
+ -  platform: mqtt
+    name: "Fan"
+    state_topic: "home/bedroom2/D2_fan"
+    command_topic: "home/bedroom2/D2_fan"
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+
+ -  platform: mqtt
+    name: "Television"
+    state_topic: "home/bedroom2/D3_TV"
+    command_topic: "home/bedroom2/D3_TV"
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true    
+#Below are the non configured switches, just used for Demo purpose
+
+ -  platform: mqtt
+    name: "AC"
+    state_topic: "home/bedroom/AC"
+    command_topic: "home/bedroom/AC"
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+
+ -  platform: mqtt
+    name: "surfacelight"
+    state_topic: "home/bedroom/surfacelight"
+    command_topic: "home/bedroom/surfacelight"
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+    
+ -  platform: mqtt
+    name: "exhaustfan"
+    state_topic: "home/bedroom/exhaustfan"
+    command_topic: "home/bedroom/exhaustfan"
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+    
+ -  platform: mqtt
+    name: "kitchendoor"
+    state_topic: "home/bedroom/kitchendoor"
+    command_topic: "home/bedroom/kitchendoor"
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+    
+ -  platform: mqtt
+    name: "bedroom"
+    state_topic: "home/bedroom/bdlight"
+    command_topic: "home/bedroom/bdlight"
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+    
+ -  platform: mqtt
+    name: "garage"
+    state_topic: "home/bedroom/glight"
+    command_topic: "home/bedroom/glight"
+    payload_on: "ON"
+    payload_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+    
+group: !include groups.yaml
+script: !include scripts.yaml
+
+mqtt:
+ broker: m14.cloudmqtt.com
+ port: 12453
+ client_id: home-assistant-1
+ username: !secret username_mqtt
+ password: !secret password_mqtt
+ discovery: true
+ discovery_prefix: homeassistant
+ 
+device_tracker:
+ - platform: ddwrt
+   host: 192.168.1.1
+   username: !secret username_router
+   password: !secret password_router
+   interval_seconds: 10
+   consider_home: 10  
+
+ - platform: owntracks
+   max_gps_accuracy: 50
+#   waypoints: True
+#   waypoint_whitelist:
+#      - Raghvendra
+
+zone:
+  - name: University
+    latitude: 37.3367731
+    longitude: -121.884206
+    radius: 100
+    icon: mdi:school
+
+
+  # This will override the default home zone
+  - name: Home
+    latitude: 37.3524827
+    longitude: -121.8919607
+    radius: 50
+    icon: mdi:home
+    
+#android_ip_webcam:
+#  - host: 192.168.1.138
+#  - host: 192.168.1.139
+media_player:
+  - platform: cast
+            
+scene:
+  - name: Home
+    entities:
+      switch.bulb: on
+      switch.fan: on
+      switch.Light: on
+      switch.Television: on
+  - name: Not_Home
+    entities:
+      switch.bulb: off
+      switch.fan: off
+      switch.Light: off
+      switch.Television: off
+  - name: Day
+    entities:
+      switch.bulb: off
+      switch.Light: off
+      switch.fan: off
+      switch.Television: off
+  - name: Night
+    entities:
+      switch.bulb: on
+      switch.Light: on
+      switch.fan: on
+      switch.Television: on
+
+automation: !include automations.yaml
