@@ -1,7 +1,7 @@
 vinayak:
   hide_if_away: false
   icon:
-  mac: D0:C5:F3:A5:65:CC
+  mac: XX:XX:XX:XX:XX:XX
   name: Vinayak
   picture: /local/Vinayak.jpg
   track: true
@@ -10,7 +10,7 @@ vinayak:
 raspberrypi:
   hide_if_away: false
   icon:
-  mac: B8:27:EB:F2:E1:A8
+  mac: XX:XX:XX:XX:XX:XX
   name: Pi
   picture: /local/raspberry-pi-logo.png
   track: true
@@ -19,7 +19,7 @@ raspberrypi:
 Varun:
   hide_if_away: false
   icon:
-  mac: F8:CF:C5:CB:2A:D1
+  mac: XX:XX:XX:XX:XX:XX
   name: Varun
   picture: /local/Varun.jpg
   track: true
@@ -28,7 +28,7 @@ Varun:
 Raghvendra:
   hide_if_away: false
   icon:
-  mac: 40:4D:7F:88:68:8F
+  mac: XX:XX:XX:XX:XX:XX
   name: Raghvendra
   picture: /local/Raghvendra.jpg
   track: true
@@ -37,7 +37,7 @@ Raghvendra:
 Sahil:
   hide_if_away: false
   icon:
-  mac: A4:70:D6:3D:AB:8E
+  mac: XX:XX:XX:XX:XX:XX
   name: Sahil
   picture: /local/Sahil.jpg
   track: true
@@ -46,7 +46,7 @@ Sahil:
 #vmittalsjcmbp:
 #  hide_if_away: false
 #  icon:
-#  mac: 98:01:A7:AA:86:9F
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: VMittalSJC-MBP
 #  picture:
 #  track: false
