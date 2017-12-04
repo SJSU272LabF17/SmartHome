@@ -2,8 +2,8 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: HOME SWEET HOME
   # Location required to calculate the time the sun rises and sets
-  latitude: 37.3422
-  longitude: -121.8833
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 24
   # metric for Metric, imperial for Imperial
@@ -92,9 +92,13 @@ config:
 
 http:
   # Secrets are defined in the file secrets.yaml
-    api_password: !secret api_password
+   api_password: !secret api_password
+   ssl_certificate: /etc/letsencrypt/live/team5.duckdns.org/fullchain.pem
+   ssl_key: /etc/letsencrypt/live/team5.duckdns.org/privkey.pem
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  # base_url: example.duckdns.org:8123
+   base_url: team5.duckdns.org
+   ip_ban_enabled: True
+   login_attempts_threshold: 3
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -126,12 +130,12 @@ sun:
 notify:
   - name: Raghvendra
     platform: pushbullet
-    api_key: o.C30Nv8mnN1UNUHBEfe2ijvFSF8D8vSyT
+    api_key: !secret api_key_push_notifications
 #light:  
 #  - platform: mqtt_json  
 #    name: "SN1 LED"  
-#    state_topic: "bruh/sensornode1"  
-#    command_topic: "bruh/sensornode1/set"  
+#    state_topic: "home/sensornode1"  
+#    command_topic: "home/sensornode1/set"  
 #    brightness: true  
 #    flash: true  
 #    rgb: true  
@@ -154,7 +158,7 @@ sensor:
       - temperature
       
   - platform: google_travel_time
-    api_key: !secret api_key
+    api_key: !secret api_key_google
     origin: The Esplanade, East Taylor Street, San Jose, CA, United States
     destination: San José State University, San Jose, CA, United States
     
@@ -297,8 +301,8 @@ group: !include groups.yaml
 script: !include scripts.yaml
 
 mqtt:
- broker: m14.cloudmqtt.com
- port: 12453
+ broker: !secret mqtt_broker_ip
+ port: !secret mqtt_port
  client_id: home-assistant-1
  username: !secret username_mqtt
  password: !secret password_mqtt
@@ -307,36 +311,36 @@ mqtt:
  
 device_tracker:
  - platform: ddwrt
-   host: 192.168.1.1
+   host: !secret router_IP
    username: !secret username_router
    password: !secret password_router
    interval_seconds: 10
    consider_home: 10  
 
  - platform: owntracks
-   max_gps_accuracy: 50
+   max_gps_accuracy: 10
 #   waypoints: True
 #   waypoint_whitelist:
 #      - Raghvendra
 
 zone:
   - name: University
-    latitude: 37.3367731
-    longitude: -121.884206
+    latitude: !secret university_latitude
+    longitude: !secret university_longitude
     radius: 100
     icon: mdi:school
 
 
   # This will override the default home zone
   - name: Home
-    latitude: 37.3524827
-    longitude: -121.8919607
+    latitude: !secret home_latitude
+    longitude: !secret home_longitude
     radius: 50
     icon: mdi:home
     
 #android_ip_webcam:
-#  - host: 192.168.1.138
-#  - host: 192.168.1.139
+#  - host: !secret ipwebcam_1
+#  - host: !secret ipwebcam_2
 media_player:
   - platform: cast
             
