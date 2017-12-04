@@ -55,7 +55,7 @@ Sahil:
 #android5d3a3bb1344cb47b:
 #  hide_if_away: false
 #  icon:
-#  mac: 00:5A:13:E4:AD:26
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: android-5d3a3bb1344cb47b
 #  picture:
 #  track: true
@@ -64,7 +64,7 @@ Sahil:
 #raghvendrasipad:
 #  hide_if_away: false
 #  icon:
-#  mac: 2C:F0:EE:50:D2:17
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: RaghvendrasiPad
 #  picture:
 #  track: true
@@ -73,7 +73,7 @@ Sahil:
 ESP_MODULE:
   hide_if_away: false
   icon:
-  mac: 2C:3A:E8:35:D2:69
+  mac: XX:XX:XX:XX:XX:XX
   name: ESP
   picture:
   track: true
@@ -82,7 +82,7 @@ ESP_MODULE:
 #raghvendras_air:
 #  hide_if_away: false
 #  icon:
-#  mac: 48:D7:05:D4:83:CF
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: Raghvendras-Air
 #  picture:
 #  track: true
@@ -91,7 +91,7 @@ ESP_MODULE:
 Parth:
   hide_if_away: false
   icon:
-  mac: 40:4E:36:5C:C2:0A
+  mac: XX:XX:XX:XX:XX:XX
   name: Parth
   picture: /local/Parth.jpg
   track: true
@@ -100,7 +100,7 @@ Parth:
 #hs100:
 #  hide_if_away: false
 #  icon:
-#  mac: 50:C7:BF:15:DA:A6
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: HS100
 #  picture:
 #  track: true
@@ -109,7 +109,7 @@ Parth:
 #desktopd696nm3:
 #  hide_if_away: false
 #  icon:
-#  mac: 9C:B6:D0:65:5C:37
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: DESKTOP-D696NM3
 #  picture:
 #  track: false
@@ -118,7 +118,7 @@ Parth:
 #Parth_PC:
 #  hide_if_away: false
 #  icon:
-#  mac: 10:02:B5:56:C8:1D
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: DESKTOP-72CP3V4
 #  picture: https://www.facebook.com/photo.php?fbid=371540346287523&set=a.291161224325436.66611.100002946837195&type=3&theater
 #  track: false
@@ -128,7 +128,7 @@ Parth:
 #sahil_PC:
 #  hide_if_away: false
 #  icon:
-#  mac: 94:E9:79:EA:05:93
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: Sahil
 #  picture:
 #  track: true
@@ -137,7 +137,7 @@ Parth:
 #anshumansmbp:
 #  hide_if_away: false
 #  icon:
-#  mac: C4:B3:01:C1:79:83
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: Anshumans-MBP
 #  picture:
 #  track: false
@@ -146,7 +146,7 @@ Parth:
 #raghvendrasipad:
 #  hide_if_away: false
 #  icon:
-#  mac: 2C:F0:EE:50:D2:17
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: RaghvendrasiPad
 #  picture:
 #  track: true
@@ -155,7 +155,7 @@ Parth:
 #raghvendrasair:
 #  hide_if_away: false
 #  icon:
-#  mac: 48:D7:05:D4:83:CF
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: Raghvendras-Air
 #  picture:
 #  track: true
@@ -164,7 +164,7 @@ Parth:
 #desktop72cp3v4:
 #  hide_if_away: false
 #  icon:
-#  mac: 10:02:B5:56:C8:1D
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: DESKTOP-72CP3V4
 #  picture:
 #  track: true
@@ -173,7 +173,7 @@ Parth:
 #sahil_2:
 #  hide_if_away: false
 #  icon:
-#  mac: 94:E9:79:EA:05:93
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: Sahil
 #  picture:
 #  track: true
@@ -182,7 +182,7 @@ Parth:
 #hs100:
 #  hide_if_away: false
 #  icon:
-#  mac: 50:C7:BF:15:DA:A6
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: HS100
 #  picture:
 #  track: true
@@ -191,7 +191,7 @@ Parth:
 #desktopd696nm3:
 #  hide_if_away: false
 #  icon:
-#  mac: 9C:B6:D0:65:5C:37
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: DESKTOP-D696NM3
 #  picture:
 #  track: true
@@ -200,7 +200,7 @@ Parth:
 #vmittalsjcmbp:
 #  hide_if_away: false
 #  icon:
-#  mac: 98:01:A7:AA:86:9F
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: VMittalSJC-MBP
 #  picture:
 #  track: true
@@ -209,7 +209,7 @@ Parth:
 #nbsp:
 #  hide_if_away: false
 #  icon:
-#  mac: EC:1F:72:C4:8E:5A
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: '&nbsp;'
 #  picture:
 #  track: true
@@ -218,7 +218,7 @@ Parth:
 #7056818a4269:
 #  hide_if_away: false
 #  icon:
-#  mac: 70:56:81:8A:42:69
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: 7056818a4269
 #  picture:
 #  track: true
@@ -236,7 +236,7 @@ Parth:
 #desktop027iv5l:
 #  hide_if_away: false
 #  icon:
-#  mac: 60:6D:C7:A3:D2:8D
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: DESKTOP-027IV5L
 #  picture:
 #  track: true
@@ -245,7 +245,7 @@ Parth:
 #10683f8fe460:
 #  hide_if_away: false
 #  icon:
-#  mac: 10:68:3F:8F:E4:60
+#  mac: XX:XX:XX:XX:XX:XX
 #  name: 10683f8fe460
 #  picture:
 #  track: true
@@ -254,7 +254,7 @@ Parth:
 chromecast:
   hide_if_away: false
   icon:
-  mac: F4:F5:E8:5C:AA:D6
+  mac: XX:XX:XX:XX:XX:XX
   name: Chromecast
   picture:
   track: true
@@ -272,7 +272,7 @@ phone_phone:
 raghvendrasair:
   hide_if_away: false
   icon:
-  mac: 48:D7:05:D4:83:CF
+  mac: XX:XX:XX:XX:XX:XX
   name: Raghvendras-Air
   picture:
   track: true
@@ -281,7 +281,7 @@ raghvendrasair:
 amazon5387c9979:
   hide_if_away: false
   icon:
-  mac: FC:A6:67:B1:EE:7F
+  mac: XX:XX:XX:XX:XX:XX
   name: amazon-5387c9979
   picture:
   track: true
@@ -290,7 +290,7 @@ amazon5387c9979:
 desktop72cp3v4:
   hide_if_away: false
   icon:
-  mac: 10:02:B5:56:C8:1D
+  mac: XX:XX:XX:XX:XX:XX
   name: DESKTOP-72CP3V4
   picture:
   track: true
@@ -299,7 +299,7 @@ desktop72cp3v4:
 shilakhasmbp:
   hide_if_away: false
   icon:
-  mac: DC:A9:04:71:FE:92
+  mac: XX:XX:XX:XX:XX:XX
   name: Shilakhas-MBP
   picture:
   track: true
@@ -308,7 +308,7 @@ shilakhasmbp:
 sahil_2:
   hide_if_away: false
   icon:
-  mac: 94:E9:79:EA:05:93
+  mac: XX:XX:XX:XX:XX:XX
   name: Sahil
   picture:
   track: true
@@ -317,7 +317,7 @@ sahil_2:
 hs100:
   hide_if_away: false
   icon:
-  mac: 50:C7:BF:15:DA:A6
+  mac: XX:XX:XX:XX:XX:XX
   name: HS100
   picture:
   track: true
@@ -326,7 +326,7 @@ hs100:
 raghvendrasipad:
   hide_if_away: false
   icon:
-  mac: 2C:F0:EE:50:D2:17
+  mac: XX:XX:XX:XX:XX:XX
   name: RaghvendrasiPad
   picture:
   track: true
@@ -335,7 +335,7 @@ raghvendrasipad:
 vmittalsjcmbp:
   hide_if_away: false
   icon:
-  mac: 98:01:A7:AA:86:9F
+  mac: XX:XX:XX:XX:XX:XX
   name: VMittalSJC-MBP
   picture:
   track: true
@@ -344,7 +344,7 @@ vmittalsjcmbp:
 desktopd696nm3:
   hide_if_away: false
   icon:
-  mac: 9C:B6:D0:65:5C:37
+  mac: XX:XX:XX:XX:XX:XX
   name: DESKTOP-D696NM3
   picture:
   track: true
@@ -353,7 +353,7 @@ desktopd696nm3:
 005a13e4ad26:
   hide_if_away: false
   icon:
-  mac: 00:5A:13:E4:AD:26
+  mac: XX:XX:XX:XX:XX:XX
   name: 005a13e4ad26
   picture:
   track: true
@@ -362,7 +362,7 @@ desktopd696nm3:
 4098ad9c6fe6:
   hide_if_away: false
   icon:
-  mac: 40:98:AD:9C:6F:E6
+  mac: XX:XX:XX:XX:XX:XX
   name: 4098ad9c6fe6
   picture:
   track: true
@@ -371,7 +371,7 @@ desktopd696nm3:
 shilensnote5:
   hide_if_away: false
   icon:
-  mac: EC:1F:72:C4:8E:5A
+  mac: XX:XX:XX:XX:XX:XX
   name: Shilens-Note-5
   picture:
   track: true
@@ -380,7 +380,7 @@ shilensnote5:
 preet:
   hide_if_away: false
   icon:
-  mac: 48:3B:38:B1:A3:87
+  mac: XX:XX:XX:XX:XX:XX
   name: Preet
   picture:
   track: true
@@ -389,7 +389,7 @@ preet:
 shilensmbp:
   hide_if_away: false
   icon:
-  mac: 70:56:81:8A:42:69
+  mac: XX:XX:XX:XX:XX:XX
   name: Shilens-MBP
   picture:
   track: true
@@ -398,7 +398,7 @@ shilensmbp:
 shaheryar:
   hide_if_away: false
   icon:
-  mac: A0:99:9B:A4:94:1F
+  mac: XX:XX:XX:XX:XX:XX
   name: Shaheryar
   picture:
   track: true
