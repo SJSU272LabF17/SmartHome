@@ -1,0 +1,18 @@
+{
+"bridge": {
+"name": "Homebridge",
+"username": "CC:22:3D:E3:CE:31",
+"port": 46117,
+"pin": "031-45-155"
+},
+"platforms": [{
+"platform": "HomeAssistant",
+"name": "House",
+"host": "https://team5.duckdns.org",
+"password": "XXXXX",
+"verify_ssl": false,
+"supported_types": ["binary_sensor", "climate", "cover", "device_tracker", "fan", "group", "input_boolean", "light", "lock", "media_player", "scene", "sensor", "switch"],
+"default_visibility": "yes",
+"logging": true
+}]
+}
