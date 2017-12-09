@@ -10,6 +10,9 @@ We have attempted to connect multiple devices and sensors
 
 The UI looks like as follows 
 
+![whatsapp image 2017-12-08 at 7 57 19 pm](https://user-images.githubusercontent.com/13025295/33792366-14584248-dc52-11e7-9477-3867068daaa5.jpeg)
+
+
 The UI shown above is admin controlled. The UI can be configured specifically for touch enabled devices which is as follows 
 
 
