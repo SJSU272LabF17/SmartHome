@@ -31,5 +31,8 @@ Architecture Diagram for the Samrt Home:
 * We have also disabled the brute froce possiblity by banning the IP to access the URL if it exceedes the allowed number of attempts for login.
 Here user can control everything anywhere to make sure that one is completely aware of any activity going around at one’s home.
 
+## Cloud MQTT Server:
+* We used the free cloud hosting (Cloud MQTT) to publish and subscribe messages between attached devices, sensors and Homeassistant.
+
 Make your smart home happen today with the Home Assistant. Getting started has never been this easy.
 
