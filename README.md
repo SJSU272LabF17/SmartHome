@@ -13,6 +13,8 @@ The UI looks like as follows :
 
 The UI shown above is admin controlled. The UI can be configured specifically for touch enabled devices which is as follows 
 
+Homeassistant keeps the Logs and Data values for all the registered devices at home and the attached sensors:
+![screen shot 2017-12-11 at 6 46 11 pm](https://user-images.githubusercontent.com/32425619/33865463-b4c5e55e-dea6-11e7-833b-1c9ecea96325.png)
 
 Architecture Diagram for the Samrt Home:
 ![architecture](https://user-images.githubusercontent.com/32425619/33865056-ce0b5640-dea4-11e7-8f9b-0f9b34b82080.png)
