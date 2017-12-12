@@ -26,6 +26,10 @@ Homeassistant keeps the Logs and Data values for all the registered devices at h
 Architecture Diagram for the Samrt Home:
 ![architecture](https://user-images.githubusercontent.com/32425619/33865056-ce0b5640-dea4-11e7-8f9b-0f9b34b82080.png)
 
+## Encryption:
+* We used the Let's Encrypt open source service to get the SSL/TLS encryption for our Homeassistant URL.
+* We have also disabled the brute froce possiblity by banning the IP to access the URL if it exceedes the allowed number of attempts for login.
 Here user can control everything anywhere to make sure that one is completely aware of any activity going around at one’s home.
 
 Make your smart home happen today with the Home Assistant. Getting started has never been this easy.
+
