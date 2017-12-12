@@ -1,0 +1,286 @@
+--- 
+clock: 
+  show_seconds: 1
+  time_format: 24hr
+  widget_style: "color: red"
+  widget_type: clock
+columns: 10
+default: 
+  dashboard: Hello
+  skin: default
+  title: "Skin Change"
+  title2: Defualt
+  widget_type: navigate
+livingroomBulb:
+  widget_type: switch
+  title: Bulb
+  enable: 1
+  #warn: 1
+  entity: switch.bulb
+  icon_style_active: "color: #FEF900"
+livingroomFan:
+  widget_type: switch
+  title: Exhaust Fan
+  enable: 1
+  #warn: 1
+  entity: switch.fan
+  icon_style_active: "color: #FEF900"
+livingroomLight:
+  widget_type: switch
+  title: Light
+  enable: 1
+  #warn: 1
+  entity: switch.light
+  icon_style_active: "color: #FEF900"
+livingroomTV:
+  widget_type: switch
+  title: TV
+  enable: 1
+  #warn: 1
+  entity: switch.television
+  icon_style_active: "color: #FEF900"
+BedroomLight:
+  widget_type: switch
+  title: Light
+  enable: 1
+  #warn: 1
+  entity: switch.bedroom
+  icon_style_active: "color: #FEF900"
+BedroomAC:
+  widget_type: switch
+  title: AC
+  enable: 1
+  #warn: 1
+  entity: switch.ac
+  icon_style_active: "color: #FEF900"
+KitchenLight:
+  widget_type: switch
+  title: Light
+  enable: 1
+  #warn: 1
+  entity: switch.surfacelight
+  icon_style_active: "color: #FEF900"
+KitchenFan:
+  widget_type: switch
+  title: Door
+  enable: 1
+  #warn: 1
+  entity: switch.kitchendoor
+  icon_style_active: "color: #FEF900"
+KitchenDoor:
+  widget_type: switch
+  title: Exhaust Fan
+  enable: 1
+  entity: switch.exhaustfan
+  icon_style_active: "color: #FEF900"
+AllAutomations:
+  widget_type: switch
+  title: All automations
+  enable: 1
+  entity: group.all_automations
+  icon_style_active: "color: #FEF900"
+DayAutomation:
+  widget_type: switch
+  title: Daytime Auto
+  enable: 1
+  #warn: 1
+  entity: automation.daytime
+  icon_style_active: "color: #FEF900"
+NightAutomation:
+  widget_type: switch
+  title: Night Auto
+  enable: 1
+  #warn: 1
+  entity: automation.nighttime
+  icon_style_active: "color: #FEF900"
+HomeAutomation:
+  widget_type: switch
+  title: I'm Home
+  enable: 1
+  #warn: 1
+  entity: automation.im_home
+  icon_style_active: "color: #FEF900"
+AwayAutomation:
+  widget_type: switch
+  title: I'm Away
+  enable: 1
+  #warn: 1
+  entity: automation.im_away
+  icon_style_active: "color: #FEF900"
+KitchenDoorAlert:
+  widget_type: switch
+  title: Kitchen Door Alert
+  enable: 1
+  #warn: 1
+  entity: automation.kitchen_door_alert
+  icon_style_active: "color: #FEF900"
+GarageLightAlert:
+  widget_type: switch
+  title: Garage Light Alert
+  enable: 1
+  #warn: 1
+  entity: automation.garage_door_alert
+  icon_style_active: "color: #FEF900"
+MotionAlert:
+  widget_type: switch
+  title: Motion Alert
+  enable: 1
+  #warn: 1
+  entity: automation.motion_sensor_alert
+  icon_style_active: "color: #FEF900"
+Garage_Light:
+  widget_type: switch
+  title: Light
+  enable: 1
+  #warn: 1
+  entity: switch.light
+  icon_style_active: "color: #FEF900"
+HueGo:
+  widget_type: light
+  title: Hue Go
+  enable: 1
+  #warn: 1
+  entity: light.jessies_hue
+  icon_style_active: "color: #FEF900"
+HueBulb:
+  widget_type: light
+  title: Hue Bulb
+  enable: 1
+  #warn: 1
+  entity: light.shilakhas_bulb
+  icon_style_active: "color: #FEF900"
+crime: 
+  entity: sensor.crime
+  title: Be Careful
+  widget_type: sensor
+glassic: 
+  dashboard: Hello
+  skin: glassic
+  title: "Skin Change"
+  title2: Glassic
+  widget_type: navigate
+global_parameters: 
+  precision: 1
+  use_comma: 0
+  use_hass_icon: 1
+iframe: 
+  refresh: 60
+  title: Cats
+  url_list: 
+    - "https://www.pexels.com/photo/grey-and-white-short-fur-cat-104827/"
+    - "https://www.pexels.com/photo/eyes-cat-coach-sofa-96938/"
+    - "https://www.pexels.com/photo/silver-tabby-cat-lying-on-brown-wooden-surface-126407/"
+    - "https://www.pexels.com/photo/kitten-cat-rush-lucky-cat-45170/"
+    - "https://www.pexels.com/photo/grey-fur-kitten-127028/"
+    - "https://www.pexels.com/photo/cat-whiskers-kitty-tabby-20787/"
+    - "https://www.pexels.com/photo/cat-sleeping-62640/"
+  widget_type: iframe
+BedroomLabel: 
+  text: BR
+  widget_type: label 
+KitchenLabel: 
+  text: K
+  widget_type: label 
+livingroomLabel: 
+  text: LR
+  widget_type: label
+  widget_style: "color: red"
+PhoneLabel: 
+  text: Phone
+  widget_type: label
+GarageLabel: 
+  text: G
+  widget_type: label
+AutomationLabel: 
+  text: A
+  widget_type: label
+layout: 
+  - "clock(2x1),reload,weather_temperature,Lyft_line,Google_Time,crime"
+  - livingroomLabel,KitchenFan,livingroomLight,livingroomTV
+  - BedroomLabel,BedroomLight,BedroomAC,GarageLabel,Garage_Light
+  - KitchenLabel,livingroomBulb,KitchenLight,livingroomFan
+  - PhoneLabel,Raghvendra,Manvitha,Shilakha,Bijie
+  - AutomationLabel,AllAutomations,DayAutomation,NightAutomation,HomeAutomation,AwayAutomation,KitchenDoorAlert,GarageLightAlert,MotionAlert
+  - "zen, obsidian,default,glassic,simplyred"
+Lyft_line: 
+  entity: sensor.lyft_line_time
+  sub_entity: sensor.lyft_line_price
+  title: "Lyft Line"
+  widget_type: sensor
+Google_Time: 
+  entity: sensor.google_travel_time__driving
+  title: Drive Time
+  widget_type: sensor
+Raghvendra: 
+  device: raghvendra
+  title: Raghvendra
+  widget_type: device_tracker
+Manvitha: 
+  device: Manvitha
+  title: Manvitha
+  widget_type: device_tracker
+Shilakha: 
+  device: Shilakha
+  title: Shilakha
+  widget_type: device_tracker
+Bijie: 
+  device: Bijie
+  title: Bijie
+  widget_type: device_tracker
+  
+
+navigate_widget: 
+  title: Amazon
+  url: "http://amazon.com"
+  widget_type: navigate
+obsidian: 
+  dashboard: Hello
+  skin: obsidian
+  title: "Skin Change"
+  title2: Obsidian
+  widget_type: navigate
+reload: 
+  title: reload
+  widget_type: reload
+simplyred: 
+  dashboard: Hello
+  skin: simplyred
+  title: "Skin Change"
+  title2: "Simply Red"
+  widget_type: navigate
+sun: 
+  entity: sun.sun
+  icon_on: fa-sun-o
+  title: Sun
+  widget_type: sensor
+title: "Manvi's Home"
+weather: 
+  entity: sensor.yweather_condition
+  units: °F
+  widget_type: weather
+weather_summary: 
+  entity: sensor.yweather_current
+  text_style: "color: $green"
+  title: "How is it outside?"
+  widget_type: sensor
+weather_temperature: 
+  entity: sensor.yweather_temperature
+  sub_entity: sensor.yweather_temperature_max
+  text_style: "color: $green"
+  title: Temperatue
+  widget_type: sensor
+widget_dimensions: 
+  - 120
+  - 120
+widget_margins: 
+  - 5
+  - 5
+widget_size: 
+  - 1
+  - 1
+zen: 
+  dashboard: Hello
+  skin: zen
+  title: "Skin Change"
+  title2: Zen
+  widget_type: navigate
