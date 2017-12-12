@@ -1,0 +1,20 @@
+AppDaemon:
+  logfile: STDOUT
+  errorfile: STDERR
+  logsize: 100000
+  log_generations: 3
+  threads: 10
+  cert_verify: false
+  
+HASS:
+  ha_url: ########
+  ha_key: ########
+    
+HADashboard:
+  dash_url: ########
+  dash_dir: ########
+  dash_force_compile: 1
+  dash_compile_on_start: 1
+  
+    
+
