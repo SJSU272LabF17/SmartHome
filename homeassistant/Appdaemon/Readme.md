@@ -1,3 +1,2 @@
 We used HADashboard, which is a dashboard for Home Assistant that is intended to be wall mounted, and is optimized for distance viewing. HADashboard is dependent upon AppDaemon. AppDaemon is not meant to replace Home Assistant Automations and Scripts, rather complement them.
 
-![ha](https://user-images.githubusercontent.com/20053808/33865930-c93e019a-dea8-11e7-8db1-7491e580455b.PNG)
