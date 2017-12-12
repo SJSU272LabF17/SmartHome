@@ -15,6 +15,7 @@ We have attempted to connect multiple devices and sensors
 The UI looks like as follows :
 ![screen shot 2017-12-11 at 6 44 53 pm](https://user-images.githubusercontent.com/32425619/33865151-45ac9a56-dea5-11e7-963e-31044be185cb.png)
 
+Here user can control everything anywhere to make sure that one is completely aware of any activity going around at one’s home.
 The UI shown above is admin controlled. The UI can be configured specifically for touch enabled devices which is as follows:
 
 Dashboard intended for wallmount:
@@ -23,13 +24,12 @@ Dashboard intended for wallmount:
 Homeassistant keeps the Logs and Data values for all the registered devices at home and the attached sensors:
 ![screen shot 2017-12-11 at 6 46 11 pm](https://user-images.githubusercontent.com/32425619/33865463-b4c5e55e-dea6-11e7-833b-1c9ecea96325.png)
 
-Architecture Diagram for the Samrt Home:
+## Architecture Diagram for the Samrt Home:
 ![architecture](https://user-images.githubusercontent.com/32425619/33865056-ce0b5640-dea4-11e7-8f9b-0f9b34b82080.png)
 
 ## Encryption:
 * We used the Let's Encrypt open source service to get the SSL/TLS encryption for our Homeassistant URL.
 * We have also disabled the brute froce possiblity by banning the IP to access the URL if it exceedes the allowed number of attempts for login.
-Here user can control everything anywhere to make sure that one is completely aware of any activity going around at one’s home.
 
 ## Cloud MQTT Server:
 * We used the free cloud hosting (Cloud MQTT) to publish and subscribe messages between attached devices, sensors and Homeassistant.
