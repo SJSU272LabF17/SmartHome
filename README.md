@@ -15,10 +15,10 @@ We have attempted to connect multiple devices and sensors
 The UI looks like as follows :
 ![screen shot 2017-12-11 at 6 44 53 pm](https://user-images.githubusercontent.com/32425619/33865151-45ac9a56-dea5-11e7-963e-31044be185cb.png)
 
-Dashboard intended for wallmount:
-![ha](https://user-images.githubusercontent.com/20053808/33865930-c93e019a-dea8-11e7-8db1-7491e580455b.PNG)
+The UI shown above is admin controlled. The UI can be configured specifically for touch enabled devices which is as follows:
 
-The UI shown above is admin controlled. The UI can be configured specifically for touch enabled devices which is as follows 
+Dashboard intended for wallmount:
+![ha](https://user-images.githubusercontent.com/20053808/33865930-c93e019a-dea8-11e7-8db1-7491e580455b.PNG) 
 
 Homeassistant keeps the Logs and Data values for all the registered devices at home and the attached sensors:
 ![screen shot 2017-12-11 at 6 46 11 pm](https://user-images.githubusercontent.com/32425619/33865463-b4c5e55e-dea6-11e7-833b-1c9ecea96325.png)
