@@ -8,10 +8,8 @@ There are different ways to install Home Assistant. You can run it on your compu
 
 We have attempted to connect multiple devices and sensors 
 
-The UI looks like as follows 
-
-![whatsapp image 2017-12-08 at 7 57 19 pm](https://user-images.githubusercontent.com/13025295/33792366-14584248-dc52-11e7-9477-3867068daaa5.jpeg)
-
+The UI looks like as follows :
+![screen shot 2017-12-11 at 6 44 53 pm](https://user-images.githubusercontent.com/32425619/33865151-45ac9a56-dea5-11e7-963e-31044be185cb.png)
 
 The UI shown above is admin controlled. The UI can be configured specifically for touch enabled devices which is as follows 
 
