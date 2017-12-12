@@ -16,6 +16,8 @@ The UI looks like as follows
 The UI shown above is admin controlled. The UI can be configured specifically for touch enabled devices which is as follows 
 
 
+Architecture Diagram for the Samrt Home:
+![architecture](https://user-images.githubusercontent.com/32425619/33865056-ce0b5640-dea4-11e7-8f9b-0f9b34b82080.png)
 
 Here user can control everything anywhere to make sure that one is completely aware of any activity going around at one’s home.
 
